@@ -56,7 +56,7 @@ pipeline {
         success {
             script {
                 echo "Triggering the next pipeline with AMI_NAME: ${AMI_NAME}"
-                build job: 'aws-terraform-infra', parameters: [string(name: 'AMI_NAME', value: AMI_NAME)]
+                build job: 'demo-terraform-infra', parameters: [string(name: 'AMI_NAME', value: AMI_NAME)]
             }
         }
         failure {
