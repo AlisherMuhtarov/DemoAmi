@@ -43,14 +43,13 @@ source "amazon-ebs" "launching" {
 build {
   sources = ["source.amazon-ebs.launching"]
     
-    provisioner "file" {
-    source = "apache.sh"
-    destination = "/home/ec2-user/"
-    }
+    // provisioner "file" {
+    // source = "apache.sh"
+    // destination = "/home/ec2-user/"
+    // }
 
     provisioner "shell" {
-      inline = [
-        "sudo sh /home/ec2-user/apache.sh"
-      ]
+      script = "apache.sh"
+      timeout = 10s 
     }
 }
