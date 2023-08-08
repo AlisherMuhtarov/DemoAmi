@@ -13,6 +13,6 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 # Create the index.html file with the specified content
-echo "this is the second ami" | sudo tee /var/www/html/index.html
+echo "this is the third ami" | sudo tee /var/www/html/index.html
 
 echo "Apache installed and index.html created!"
