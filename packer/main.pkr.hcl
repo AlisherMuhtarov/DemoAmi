@@ -50,6 +50,5 @@ build {
 
     provisioner "shell" {
       script = "apache.sh"
-      timeout = "10s" 
     }
 }

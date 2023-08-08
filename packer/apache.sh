@@ -4,7 +4,7 @@
 sudo yum update -y
 
 # Install Apache
-sudo yum install -y httpd
+sudo yum install httpd -y
 
 # Start Apache service
 sudo systemctl start httpd
