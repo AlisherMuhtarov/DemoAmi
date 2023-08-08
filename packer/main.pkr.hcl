@@ -16,7 +16,7 @@ data "amazon-ami" "amazonlinux" {
       root-device-type = "ebs"
   }
 
-  owners = ["555519622762"] 
+  owners = ["PUT AWS ACCOUNT ID"] 
   most_recent = true
   region = "us-east-1"
 }
