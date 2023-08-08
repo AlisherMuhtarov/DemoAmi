@@ -51,6 +51,7 @@ pipeline {
                 }
             }
         }
+    }
     post {
         success {
             script {
