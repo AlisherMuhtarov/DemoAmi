@@ -26,7 +26,7 @@ pipeline {
             steps {
                 dir('packer') {
                     script {
-                        def commitID = env.GIT_COMMIT // Get the Git commit ID, provided by jenkins pipeline script
+                        def commitID = env.COMMIT_ID // Get the Git commit ID, provided by jenkins pipeline script
                         env.COMMIT_ID = commitID // Set the commit ID as an environmental variable
                         echo "Commit ID: ${commitID}"
 
